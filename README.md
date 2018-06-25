@@ -38,4 +38,19 @@ at each 10ms interval with the servoLopp Frequency at 1kHz + modified according
 to accomodate the Format: Trial Number, Timing=10*number at 1kHz update Frequency, 
 ProxyPosition, ForceVec
 
+# RandomisedArray.cpp
+Randomly initialise an array of N integers starting from 1 to N.
+
+# RandomPosition.cpp
+Position shown by movement Cue is calculated and written out on log File
+Random Position as Rand_Positioncalculated and written in log_file "Random_digit.txt"
+Rand_Position to define the rotation of the movement cue
+In the beginning all the Clock Numbers will be loaded then afterwards the one at which
+the arrow is gonna be rotated to point at the target
+In 50% of the cases a number 3 or E appears at the position shown by the EndTip Pointer
+umber 3 or E has a probablity of 50 % in this case as well
+1. Binary Random variable Rand_3E used with either 1 or 0 to express this Distribution
+Case 0: E/3 appears where the movement cue shows
+Case 1: E/3 appears at any other position apart from the position showed by movement cue or adjacent to the
+movement Cue
 
