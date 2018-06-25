@@ -23,4 +23,19 @@ Opens a display window given the window Handle ID, window width & window heigth
 # Force.cpp
 Calculates the Force between the centre of the circle and the position of the Haptic Device End Effector modelled as Force resulting between 2 point charges in an "inverse squared field"
 
-# 
+# ForceCallbackRoutine.cpp
+Handles the presence of Force within different events during the Experiment
+
+# HapticCallback.cpp
+Handles the presence of Haptic Feeback(felt by the enduser when touching the EndEffector) within different events occurring during the Experiment
+
+# Parameters.cpp
+Takes in the parameters of the Experiment like time interval and occurrence time of different events in the course of the experiment and writes them as .csv file
+
+# PosForceWrite.cpp
+PosForceWrite Function: writes the Cursor Position + forceVector in 3D onto Log File
+at each 10ms interval with the servoLopp Frequency at 1kHz + modified according
+to accomodate the Format: Trial Number, Timing=10*number at 1kHz update Frequency, 
+ProxyPosition, ForceVec
+
+
