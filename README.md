@@ -12,3 +12,15 @@ https://de.3dsystems.com/haptics-devices/3d-systems-phantom-premium
 Languages: C++ 11
 
 IDE USED: Visaul Studio 2015
+
+Software Structure:
+# Character.cpp
+Initialises 3D Boxes with a customised image as texture on top of it positions the 12 characters displayed on the circumference of a circle
+
+# CustomWindow.cpp
+Opens a display window given the window Handle ID, window width & window heigth
+
+# Force.cpp
+Calculates the Force between the centre of the circle and the position of the Haptic Device End Effector modelled as Force resulting between 2 point charges in an "inverse squared field"
+
+# 
